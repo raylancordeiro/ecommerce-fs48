@@ -1,0 +1,155 @@
+:root {
+    --primary: #8201FF;
+    --gray100: #e8e8e8;
+    --gray200: #9c9c9c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: linear-gradient(white,  var(--gray100));
+}
+
+.navbar {
+    background: var(--primary);
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5em;
+}
+
+.navbar input {
+    padding: 5px;
+}
+
+.menu {
+    position: relative;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    transform: scale(1.05);
+}
+
+.lista-header {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.hamburguer {
+    display: none;
+}
+
+.banner {
+    width: 83% ;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vitrine {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 200px;
+    border: 1px solid var(--gray200);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 2px 4px 10px var(--gray200);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px var(--gray200);
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;
+}
+
+.checkout {
+    width: 100px;
+}
+
+.table-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (width <= 703px) {
+   
+    .lista-header {
+        /* display: none; */
+        flex-direction: column;
+        background-color: #9c9c9c;
+        padding: 10px;
+        position: absolute;
+        top: -40px;
+        left: -76px;
+        
+
+
+    }
+
+@media screen and (width <= 322px) {
+    .navbar h1 {
+        font-size: 1.3em; 
+    }
+}
+
+    /* .hamburguer {
+        display: block;
+        cursor: pointer;
+    } */
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Carrinho</title>
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">EliteDrinks</h1>
+        <h1>Carrinho</h1>
+        <div class="hamburguer">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul class="lista-header">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Produtos</a></li>
+                    <li><a href="">Categorias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container text-center">
+        <table class="table table-striped table-hover">
+            <thead>
+                <th>imagem</th>
+                <th>nome</th>
+                <th>quantidade</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img class="checkout" src="images/product.webp" alt=""></td>
+                    <td>Cerveja pilsner</td>
+                    <td>
+                        <input class="checkout form-control" type="number" value="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img class="checkout" src="images/product.webp" alt=""></td>
+                    <td>Cerveja Lagger</td>
+                    <td>
+                        <input class="checkout form-control" type="number" value="4">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Entrega</h1>
+                <form>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">RUA</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Nº</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">UF</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col">
+                <h1>Cartão</h1>
+                <form>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Numero do Cartão</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Nome do Titular</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Vencimento</label>
+                        <input type="date" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">CVV</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Parcelas</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3 (sem juros)</option>
+                            <option value="4">4 (Juros R$10.00)</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                          </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 EliteDrinks - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
